@@ -2,74 +2,100 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El descuido silencioso</title>
 
-  <title>El descuido silencioso | Mini-guía práctica</title>
-  <meta name="description" content="Pequeñas acciones cotidianas que parecen inofensivas pero pueden causar accidentes reales. Guía breve y clara." />
-
-  <!-- SEO básico -->
-  <meta name="robots" content="index, follow" />
-
-  <!-- Adsense (HEAD) -->
-  <!-- CAMBIA ca-pub-XXXXXXXXXXXX -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8239940853717265"
-     crossorigin="anonymous"></script>
+  <meta name="description" content="Pequeñas acciones cotidianas que parecen inofensivas, pero que con el tiempo pueden causar accidentes, lesiones o pérdidas evitables." />
 
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #2f6fed;
+      --box: #f2f2f2;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f0f0f;
+        --text: #eaeaea;
+        --muted: #aaa;
+        --box: #1a1a1a;
+      }
+    }
+
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      background: #fafafa;
-      color: #222;
     }
 
     header {
-      padding: 1.5rem 1rem;
-      background: #111;
+      background: linear-gradient(135deg, #111, #000);
       color: #fff;
+      padding: 3rem 1.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #ddd;
+      max-width: 720px;
     }
 
     main {
-      max-width: 760px;
+      max-width: 900px;
       margin: auto;
-      padding: 1.5rem 1rem 4rem;
-    }
-
-    h1 {
-      font-size: 1.6rem;
-      margin-bottom: 0.5rem;
+      padding: 2rem 1.5rem;
     }
 
     h2 {
-      margin-top: 2rem;
-      font-size: 1.2rem;
+      margin-top: 2.5rem;
+      font-size: 1.6rem;
+      border-bottom: 2px solid var(--box);
+      padding-bottom: 0.3rem;
     }
 
-    .nota {
-      background: #fff3cd;
-      border-left: 4px solid #ff9800;
-      padding: 0.8rem;
+    p {
+      max-width: 800px;
+    }
+
+    ul {
+      max-width: 800px;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .box {
+      background: var(--box);
+      padding: 1.2rem;
+      border-radius: 8px;
       margin: 1.5rem 0;
-      font-size: 0.95rem;
     }
 
     footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: #f1f1f1;
-      border-top: 1px solid #ddd;
-      padding: 0.3rem 0;
-      text-align: center;
-      z-index: 100;
+      margin-top: 4rem;
+      padding: 2rem 1.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-top: 1px solid var(--box);
     }
 
-    .disclaimer {
-      font-size: 0.75rem;
-      color: #555;
+    .ads {
       margin-top: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
     }
   </style>
 </head>
@@ -78,52 +104,76 @@
 
 <header>
   <h1>El descuido silencioso</h1>
-  <p>Pequeñas acciones que parecen nada… hasta que no lo son.</p>
+  <p>
+    Pequeñas acciones que parecen nada…  
+    hasta que un día no lo son.
+  </p>
 </header>
 
 <main>
 
   <h2>¿Qué es?</h2>
   <p>
-    Muchas lesiones, incendios y accidentes no ocurren por imprudencia extrema,
-    sino por <strong>hábitos cotidianos normalizados</strong>.
+    El <strong>descuido silencioso</strong> no es imprudencia extrema ni decisiones absurdas.
+    Es ese conjunto de hábitos cotidianos que se normalizan con el tiempo:
+    dejar algo “para luego”, asumir que “no pasa nada”, confiar en que “siempre ha funcionado así”.
+  </p>
+  <p>
+    Muchos accidentes domésticos, incendios, lesiones y pérdidas materiales
+    no ocurren por mala intención, sino por <strong>acumulación de pequeños descuidos</strong>.
   </p>
 
   <h2>Ejemplos comunes</h2>
   <ul>
-    <li>Dejar cargadores conectados sin uso</li>
-    <li>Usar el celular mientras se camina en la calle</li>
-    <li>Bloquear salidas con objetos “temporales”</li>
+    <li>Dejar cargadores baratos conectados permanentemente.</li>
+    <li>Usar extensiones eléctricas saturadas.</li>
+    <li>No revisar fechas de caducidad en medicamentos.</li>
+    <li>Guardar químicos de limpieza sin etiquetar.</li>
+    <li>Conducir cansado “solo un poco”.</li>
+    <li>Ignorar pequeños ruidos o fallas porque “luego lo veo”.</li>
+    <li>No asegurar objetos pesados en estantes altos.</li>
   </ul>
 
-  <div class="nota">
-    ⚠️ No es paranoia. Es prevención ligera.
+  <h2>¿Por qué pasa?</h2>
+  <div class="box">
+    <p>
+      El cerebro humano es excelente optimizando energía.
+      Cuando algo no genera consecuencias inmediatas, lo clasifica como seguro.
+    </p>
+    <p>
+      El problema es que muchos riesgos <strong>no fallan todos los días</strong>,
+      pero cuando fallan, lo hacen de forma grave.
+    </p>
   </div>
 
-  <h2>¿Por qué importa?</h2>
+  <h2>Cómo reducir el riesgo</h2>
+  <ul>
+    <li>Revisar periódicamente objetos y hábitos normalizados.</li>
+    <li>Cuestionar frases como “siempre lo he hecho así”.</li>
+    <li>Corregir pequeñas cosas cuando aún son fáciles.</li>
+    <li>No depender solo de la memoria: usar recordatorios o listas.</li>
+    <li>Asumir que prevenir es más barato que reparar.</li>
+  </ul>
+
+  <h2>Una nota importante</h2>
   <p>
-    Porque estos descuidos no se sienten peligrosos…
-    hasta el día que lo son.
+    Este sitio no busca generar miedo ni paranoia.
+    La intención es <strong>hacer visible lo invisible</strong>:
+    esos detalles que se vuelven peligrosos solo porque dejamos de verlos.
   </p>
-
-  <div class="disclaimer">
-    Esta mini-guía es informativa y no sustituye normas oficiales de seguridad.
-  </div>
 
 </main>
 
-<!-- 💰 ADSENSE ABAJO (banner discreto) -->
 <footer>
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-XXXXXXXXXXXX"
-       data-ad-slot="1234567890"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
+  <p>
+    Contenido informativo de carácter general.  
+    No sustituye asesoría profesional ni normas oficiales de seguridad.
+  </p>
 
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  <div class="ads">
+    <!-- Aquí irá el banner de publicidad mínima cuando Adsense apruebe -->
+    Publicidad discreta · Sitio independiente
+  </div>
 </footer>
 
 </body>
